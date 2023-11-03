@@ -1,23 +1,83 @@
-$primary-color: #4e89ae;
+@import "centering", "mediaqueries"; // centering mixin
+$color1: #4e89ae;
+$color2: #43658b;
+$color3:#ed6663;
+$color4: #ffa372;
+$color5: #8ccff7;
+$hover-color: #444;
 
-
-*{
+* {
     margin: 0;
-    padding: 0; 
+    padding: 0;
+}
+// Image screens
+.screens{
+    @include center();
+    @include screen1();
+    @include screen2();
+    @include screen3();
+    background-color: $color5;
+    margin: 0px 0px 50px;
+}
+// Stripes
+.stripes-container{
+    margin: 0px 0px 50px;
+    .stripe1{
+        background-color: $color1;
+        width:100%;
+        min-height: 50px;
+    }
+    .stripe2{
+        background-color: $color2;
+        width:100%;
+        height: 50px;
+    }
+    .stripe3{
+        background-color: $color3;
+        width:100%;
+        height: 50px;
+    }
+    .stripe4{
+        background-color: $color4;
+        width:100%;
+        height: 50px;
+    }
+}
+// Circles
+.container{
+    @include center();
+    @include breakpoint-circles();
+    margin: 50px 0px 50px;
+    .circles{
+        .circle1{
+            background-color: $color1;
+            width: 70px;
+            height: 70px;
+        }
+        .circle2{
+            background-color: $color2;
+            width: 80px;
+            height: 80px;
+        }
+        .circle3{
+            background-color: $color3;
+            width: 90px;
+            height: 90px;
+        }
+        .circle4{
+            background-color: $color4;
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+// Stripe and Circle on hover
+.stripes:hover, .circle:hover{
+    background-color: $hover-color;
 }
 
-.container {
-    background-color: $primary-color;
-}
-
-.circle1 {
-    height: 25px;
-    width: 25px;
-    background-color: #4e89ae ;
-    border-radius: 50%;
-    display: inline-block;
-}
-
-footer {
-    height: 50px;
+footer{
+    background-color: $color5;
+    width: 100%;
+    min-height:50px;
 }

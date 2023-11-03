@@ -205,7 +205,6 @@ footer {
     display: none;
   }
 }
-
 /* When screen size is less than or equall to 480px */
 @media (width <= 480px) {
   .grid-container {

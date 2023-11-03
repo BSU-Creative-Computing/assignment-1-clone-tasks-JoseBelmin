@@ -1,0 +1,51 @@
+// When screen size is 800px and above
+@mixin screen3() {
+    @media (min-width: 801px) {
+        .img1{
+            display: block;
+        }
+        .img2{
+            display: none;
+        }        
+        .img3{
+            display: none;
+        }
+    }
+}
+
+// When screen size is between 481 and 800px
+@mixin screen2() {
+    @media (min-width: 481px) and (max-width: 800px) {
+        .img1{
+            display: none;
+        }
+        .img2{
+            display: block;
+        }        
+        .img3{
+            display: none;
+        }
+    }
+}
+
+// When screen size 480px and below
+@mixin screen3() {
+    @media (max-width: 480px) {
+        .img1{
+            display: none; 
+        }
+        .img2{
+            display: none;
+        }        
+        .img3{
+            display: block;
+        }
+    }
+}
+
+// Circles when screen size is more than or equal to 620px
+@mixin breakpoint-circles(){
+    @media (max-width: 621px){
+        display: inline-block;
+    }
+}
