@@ -1,56 +1,59 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: #e2eff1;
 }
 
 .screens {
   display: flex;
+  gap: 1vh;
   align-items: center;
   justify-content: center;
   background-color: #8ccff7;
-  margin: 0px 0px 50px;
+  margin: 0px 0px 6dvh;
 }
-@media (width > 800px) {
-  .screens .img1 {
+@media (min-width: 801px) {
+  .screens .screen1 {
     display: block;
   }
-  .screens .img2 {
+  .screens .screen2 {
     display: none;
   }
-  .screens .img3 {
+  .screens .screen3 {
     display: none;
   }
 }
-@media (width <= 800px) {
-  .screens .img1 {
+@media (min-width: 481px) and (max-width: 800px) {
+  .screens .screen1 {
     display: none;
   }
-  .screens .img2 {
+  .screens .screen2 {
     display: block;
   }
-  .screens .img3 {
+  .screens .screen3 {
     display: none;
   }
 }
-@media (width <= 480px) {
-  .screens .img1 {
+@media (max-width: 480px) {
+  .screens .screen1 {
     display: none;
   }
-  .screens .img2 {
+  .screens .screen2 {
     display: none;
   }
-  .screens .img3 {
+  .screens .screen3 {
     display: block;
   }
 }
 
 .stripes-container {
-  margin: 0px 0px 50px;
+  margin: 0px 0px 6dvh;
 }
 .stripes-container .stripe1 {
   background-color: #4e89ae;
-  min-height: 50px;
   width: 100%;
+  min-height: 50px;
 }
 .stripes-container .stripe2 {
   background-color: #43658b;
@@ -70,47 +73,49 @@
 
 .container {
   display: flex;
+  gap: 1vh;
   align-items: center;
   justify-content: center;
-  margin: 50px 0px 50px;
+  margin: 8dvh 0vw 8dvh;
 }
-@media (width <= 620px) {
+@media (max-width: 621px) {
   .container {
     display: flex;
     flex-direction: column;
   }
 }
-.container .circles {
-  border-radius: 50%;
-  margin: 10px;
-}
-.container .circles .circle1 {
+.container .circle1 {
   background-color: #4e89ae;
   width: 70px;
   height: 70px;
+  border-radius: 100%;
 }
-.container .circles .circle2 {
+.container .circle2 {
   background-color: #43658b;
   width: 80px;
   height: 80px;
+  border-radius: 100%;
 }
-.container .circles .circle3 {
+.container .circle3 {
   background-color: #ed6663;
   width: 90px;
   height: 90px;
+  border-radius: 100%;
 }
-.container .circles .circle4 {
+.container .circle4 {
   background-color: #ffa372;
   width: 100px;
   height: 100px;
+  border-radius: 100%;
 }
 
-.rows:hover, .circle:hover {
+.stripes:hover, .circles:hover {
   background-color: #444;
 }
 
 footer {
-  background-color: #8ccff7;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
   height: 50px;
+  background-color: #8ccff7;
 }/*# sourceMappingURL=style.css.map */
