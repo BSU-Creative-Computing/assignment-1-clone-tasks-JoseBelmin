@@ -2,12 +2,13 @@
   padding: 0;
   margin: 0;
   font-family: 'Cairo', sans-serif;
+  
 }
 
 .nav { /* Header Banner */
   background-color: #1e90ff;
   width: 100%;
-  height: 8vh;
+  height: 8svh;
   overflow: hidden;
   display: flex;
   position: relative;
@@ -16,23 +17,25 @@
 }
 
 #icon { /* Website icon */
-  padding: 1.5vh 0vh 1vh 2vh;
+  padding: 1vh 0vh 1vh 2vh;
   color: #FFFFFF;
   font-size: 1.7rem;
   font-weight: 600;
 }
 /* Navigation bar */
-ol {
+.nav-list {
   display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
   list-style: none;
-  margin: auto 1vw;
 }
 
-ol li {
-  margin: 0px 0.7vw 
+.nav-list li {
+  padding: 2vh 1vw 2vh 0vw;
 }
 
-ol li a {
+.nav-list li a {
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -102,8 +105,7 @@ ol li a {
 /* 'More' button */
 .more {
   display: flex;
-  justify-content: right;
-  align-items: flex-end;
+  justify-content: end;
   padding: 3vh 1vw 2vh;
 }
 
@@ -115,7 +117,7 @@ ol li a {
   background-color: #1e90ff;
   color: #FFFFFF;
 }
-
+/* Copyright footer */
 footer {
   display: flex;
   justify-content: center;
@@ -128,6 +130,7 @@ footer {
   .grid-container {
     padding: 0;
     grid-gap: 1vw
+    
   }
 
   .main-child {
