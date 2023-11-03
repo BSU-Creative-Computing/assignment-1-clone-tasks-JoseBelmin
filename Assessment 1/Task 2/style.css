@@ -8,7 +8,7 @@
 .nav { /* Header Banner */
   background-color: #1e90ff;
   width: 100%;
-  height: 8svh;
+  height: 8dvh;
   overflow: hidden;
   display: flex;
   position: relative;
@@ -66,25 +66,25 @@
 }
 /* Main movie content container  */
 .main-child {
-  width: 32vw;
+  width: 32dvw;
   height: fit-content;
   box-shadow: 1px 1px 8px gray;
 }
 
 .main-child img { 
-  width: 32vw;
+  width: 32dvw;
 }
 /* Side movie content containers */
 .featured-child {
   display: grid;
-  grid-template-columns: 16vw 16vw;
+  grid-template-columns: 16dvw 16dvw;
   grid-template-rows: 2;
   grid-gap: 0.5vw;
-  width: 16vw;
+  width: 16dvw;
 }
 
 .featured-child img {
-  width: 14.5vw;
+  width: 14.5dvw;
   padding: 15px 15px 0px 15px;
 }
 /* Individual movie containers */
@@ -119,9 +119,8 @@
 }
 /* Copyright footer */
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  text-align: center;
   font-size: 0.9rem;
   padding: 5vh 0vw 3vh;
 }

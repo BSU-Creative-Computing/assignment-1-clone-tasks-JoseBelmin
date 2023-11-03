@@ -48,7 +48,7 @@ footer{ /* Footer banner */
     font-size: 13px;
 }
 
-@media (width = 1024px) { /* For when the screen size is exactly at 1024px */
+@media (width <= 1024px) { /* For when the screen size is less than or equal to 1024px */
     .container {
         width: 1024px;
     }
