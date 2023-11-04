@@ -7,9 +7,9 @@
 
 .screens {
   display: flex;
-  gap: 1vh;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  gap: 1rem;
   background-color: #8ccff7;
   margin: 0px 0px 6dvh;
 }
@@ -58,24 +58,24 @@
 .stripes-container .stripe2 {
   background-color: #43658b;
   width: 100%;
-  height: 50px;
+  min-height: 50px;
 }
 .stripes-container .stripe3 {
   background-color: #ed6663;
   width: 100%;
-  height: 50px;
+  min-height: 50px;
 }
 .stripes-container .stripe4 {
   background-color: #ffa372;
   width: 100%;
-  height: 50px;
+  min-height: 50px;
 }
 
 .container {
   display: flex;
-  gap: 1vh;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  gap: 1rem;
   margin: 8dvh 0vw 8dvh;
 }
 @media (max-width: 621px) {
