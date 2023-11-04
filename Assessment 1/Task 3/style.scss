@@ -75,7 +75,7 @@ $hover-color: #444;
         border-radius: 100%;
     }
 }
-// Stripe and Circle on hover
+// Stripe and Circle on hover *only on desktop*
 .stripes:hover, .circles:hover{
     background-color: $hover-color;
 }
