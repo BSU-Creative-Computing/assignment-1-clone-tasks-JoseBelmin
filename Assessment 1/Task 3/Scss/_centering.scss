@@ -1,7 +1,5 @@
 // For centering content
 @mixin center(){
-    display:flex;
-    gap: 1vh;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    place-items: center;
 }
