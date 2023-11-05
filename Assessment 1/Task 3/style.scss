@@ -1,10 +1,6 @@
-@import 'mediaqueries', 'centering';
-$SC-color1: #4e89ae;
-$SC-color2: #43658b;
-$SC-color3:#ed6663;
-$SC-color4: #ffa372;
-$banner-color5: #8ccff7;
-$hover-color: #444;
+@use 'colors';
+@use 'centering';
+@use 'mediaqueries';
 
 * {
     box-sizing: border-box;
@@ -18,29 +14,29 @@ $hover-color: #444;
     @include screen1();
     @include screen2();
     @include screen3();
-    background-color: $banner-color5;
+    background-color: color.$banner-color5;
     margin: 0px 0px 6dvh;
 }
 // Stripes
 .stripes-container {
     margin: 0px 0px 6dvh;
     .stripe1{
-        background-color: $SC-color1;
+        background-color: color.$SC-color1;
         width:100%;
         min-height: 50px;
     }
     .stripe2{
-        background-color: $SC-color2;
+        background-color: color.$SC-color2;
         width:100%;
         min-height: 50px;
     }
     .stripe3{
-        background-color: $SC-color3;
+        background-color: color.$SC-color3;
         width:100%;
         min-height: 50px;
     }
     .stripe4{
-        background-color: $SC-color4;
+        background-color:color.$SC-color4;
         width:100%;
         min-height: 50px;
     }
@@ -51,25 +47,25 @@ $hover-color: #444;
     @include breakpoint-circles();
     margin: 8dvh 0vw 8dvh;
     .circle1{
-        background-color: $SC-color1;
+        background-color: color.$SC-color1;
         width: 70px;
         height: 70px;
         border-radius: 100%;
     }
     .circle2{
-        background-color: $SC-color2;
+        background-color: color.$SC-color2;
         width: 80px;
         height: 80px;
         border-radius: 100%;
     }
     .circle3{
-        background-color: $SC-color3;
+        background-color: color.$SC-color3;
         width: 90px;
         height: 90px;
         border-radius: 100%;
     }
     .circle4{
-        background-color: $SC-color4;
+        background-color: color.$SC-color4;
         width: 100px;
         height: 100px;
         border-radius: 100%;
@@ -77,12 +73,12 @@ $hover-color: #444;
 }
 // Stripe and Circle on hover *only on desktop*
 .stripes:hover, .circles:hover{
-    background-color: $hover-color;
+    background-color: color.$hover-color;
 }
 // Footer
 footer{
     display: flex;
     flex-direction: column;
     height: 50px;
-    background-color: $banner-color5;
+    background-color: color.$banner-color5;
 }
