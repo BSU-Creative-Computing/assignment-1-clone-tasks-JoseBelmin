@@ -191,7 +191,7 @@ footer {
   }
 
   .featured-child {
-    grid-template-columns: 44vw 44vw;
+    grid-template-columns: 48vw 48vw;
     width: 100%;
     grid-gap: 2vw;
   }
