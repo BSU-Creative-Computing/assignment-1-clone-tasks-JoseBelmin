@@ -58,15 +58,14 @@
 /* Website content */
 .movies-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 32vw 32vw;
   grid-gap: 0.5vw;
-  width: fit-content;
   padding: 0px 15% 0px 15%;
-  margin: 1vw;
+  margin-top: 1vw;
 }
 /* Main movie content container  */
 .main-child {
-  width: 32vw;
+  width: min-content;
   height: fit-content;
   box-shadow: 1px 1px 8px gray;
 }
@@ -80,7 +79,6 @@
   grid-template-columns: 16vw 16vw;
   grid-template-rows: 2;
   grid-gap: 0.5vw;
-  width: 16vw;
 }
 
 .featured-child img {
@@ -126,9 +124,10 @@ footer {
 }
 /* When screen size is less than or equall to 1280px */
 @media (width <= 1280px) {
-  .grid-container {
-    padding: 0;
+  .movies-container {
+    grid-template-columns: 48vw 48vw;
     grid-gap: 1vw;
+    padding: 0px 0px 0px 1vw;
   }
 
   .main-child {
@@ -151,9 +150,10 @@ footer {
 }
 /* When screen size is less than or equall to 1024px */
 @media (width <= 1024px) {
-  .grid-container {
-    padding: 0;
+  .movies-container {
+    grid-template-columns: 64vw 64vw;
     grid-gap: 1.5vw;
+    padding: 0px 0px 0px 1vw;
   }
 
   .main-child {
@@ -176,10 +176,10 @@ footer {
 }
 /* When screen size is less than or equall to 800px */
 @media (width <= 800px) {
-  .grid-container {
-    padding: 0;
+  .movies-container {
     grid-template-columns: 98vw;
     grid-gap: 2vw;
+    padding: 0px 0px 0px 1vw;
   }
 
   .main-child {
@@ -191,7 +191,7 @@ footer {
   }
 
   .featured-child {
-    grid-template-columns: 49% 49%;
+    grid-template-columns: 44vw 44vw;
     width: 100%;
     grid-gap: 2vw;
   }
@@ -206,10 +206,10 @@ footer {
 }
 /* When screen size is less than or equall to 480px */
 @media (width <= 480px) {
-  .grid-container {
-    padding: 1vh 2vw 0vh 2vw;
+  .movies-container {
     grid-template-columns: 94vw;
     grid-gap: 4vw;
+    padding: 1vh 0vw 0vh 3vw;
   }
 
   .main-child {
