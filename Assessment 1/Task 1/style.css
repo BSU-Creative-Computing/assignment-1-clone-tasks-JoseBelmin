@@ -5,9 +5,8 @@
 
 body{ /* To center main content */
     background-color: #f6f6f7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-content: center;
 }
 
 .container { /* To set content background color and size */
@@ -23,12 +22,11 @@ header img { /* Website Logo */
 .gallery { /* Picture gallery layout */
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 365px);
+    grid-template-columns: 365px 365px 365px;
 }
 
 .gallery img { /* Picture sizing */
-    width: 365px;
-    height: 365px;
+    max-width: 365px;
 }
 
 h2 { /* Text formatting */
@@ -59,12 +57,11 @@ footer{ /* Footer banner */
     }
 
     .gallery { /* Set picures to automatically fill gaps */
-        grid-template-columns: repeat(3, auto-fill);
+        grid-template-columns: repeat(3, 341.333px);
     }
 
     .gallery img {
-        width: 324px;
-        height: 324px;
+        min-width: 341.333px;
     }
 
     h2 { /* For easier reading */
@@ -93,8 +90,7 @@ footer{ /* Footer banner */
     }
 
     .gallery img {
-        width: 400px;
-        height: 400px;
+        min-width: 400px;
     }
 
     h2 {
@@ -124,8 +120,7 @@ footer{ /* Footer banner */
     }
 
     .gallery img {
-        width: 480px;
-        height: 480px;
+        min-width: 480px;
     }
 
     h2 {

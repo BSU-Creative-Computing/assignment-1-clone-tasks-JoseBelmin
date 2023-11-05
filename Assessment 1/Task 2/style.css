@@ -8,7 +8,7 @@
 .navigation { /* Header Banner */
   background-color: #1e90ff;
   width: 100%;
-  height: 8dvh;
+  height: 80px;
   overflow: hidden;
   display: flex;
   position: relative;
@@ -17,22 +17,22 @@
 }
 
 #icon { /* Website icon */
-  padding: 1vh 0vh 1vh 2vh;
+  padding: 12px 0px 0px 24px;
   color: #FFFFFF;
-  font-size: 1.7rem;
+  font-size: 28px;
   font-weight: 600;
 }
 /* Navigation bar */
 .navigation-list {
   display: flex;
-  gap: 1rem;
+  gap: 5px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .navigation-list li {
-  padding: 2vh 1vw 2vh 0vw;
+  padding: 24px 16px 0px 0px;
 }
 
 .navigation-list li a {
@@ -43,7 +43,7 @@
 #searchbar {
   display: flex;
   margin: auto 0px;
-  height: 4vh;
+  height: 42px;
 }
 
 #searchbar input {
@@ -52,8 +52,8 @@
   background-color: #FFFFFF;
   height: 100%;
   padding: 0px 0.5vw;
-  font-size: 0.9rem;
-  width: 300px;
+  font-size: 16px;
+  width: 280px;
 }
 /* Website content */
 .movies-container {
@@ -66,25 +66,25 @@
 }
 /* Main movie content container  */
 .main-child {
-  width: 32dvw;
+  width: 32vw;
   height: fit-content;
   box-shadow: 1px 1px 8px gray;
 }
 
 .main-child img { 
-  width: 32dvw;
+  width: 32vw;
 }
 /* Side movie content containers */
 .featured-child {
   display: grid;
-  grid-template-columns: 16dvw 16dvw;
+  grid-template-columns: 16vw 16vw;
   grid-template-rows: 2;
   grid-gap: 0.5vw;
-  width: 16dvw;
+  width: 16vw;
 }
 
 .featured-child img {
-  width: 14.5dvw;
+  width: 14.5vw;
   padding: 15px 15px 0px 15px;
 }
 /* Individual movie containers */
@@ -128,8 +128,7 @@ footer {
 @media (width <= 1280px) {
   .grid-container {
     padding: 0;
-    grid-gap: 1vw
-    
+    grid-gap: 1vw;
   }
 
   .main-child {
